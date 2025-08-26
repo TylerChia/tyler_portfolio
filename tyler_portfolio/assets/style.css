@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ===== Pastel Pink Theme Overrides ===== */
+body {
+    background-color: #fff7f9; /* light pastel pink background */
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #fbb1bd, #ffd6e0);
+    border-bottom: 3px solid #ffafc5;
+}
+.navbar-brand, .nav-link {
+    color: #4a4a4a !important;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: #d63384 !important; /* bright pink on hover */
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #d63384; /* vibrant pink for headers */
+    font-weight: 700;
+}
+
+/* Cards */
+.card {
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid #ffe0eb;
+    box-shadow: 0 4px 12px rgba(255, 175, 197, 0.2);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 175, 197, 0.3);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #ff9ebb !important;
+    border-color: #ff9ebb !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(255, 158, 187, 0.4);
+}
+.btn-primary:hover {
+    background-color: #ff7aa3 !important;
+    border-color: #ff7aa3 !important;
+}
+
+/* Graph container */
+.js-plotly-plot {
+    background-color: #fff !important;
+    border: 2px solid #ffe0eb;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(255, 175, 197, 0.15);
+    max-height: 500px;
+}
+
+/* Contact page styling */
+.contact-section {
+    background: #ffeef5;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(255, 175, 197, 0.2);
+}
