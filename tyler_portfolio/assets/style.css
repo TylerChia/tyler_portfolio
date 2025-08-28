@@ -1,73 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-/* ===== Pastel Pink Theme Overrides ===== */
+/* Global Theme */
 body {
-    background-color: #fff7f9; /* light pastel pink background */
-    font-family: 'Poppins', sans-serif;
-    color: #444;
+    background-color: #0d1b1e; /* deep teal background */
+    color: #e0f2f1; /* light teal text */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(90deg, #fbb1bd, #ffd6e0);
-    border-bottom: 3px solid #ffafc5;
-}
-.navbar-brand, .nav-link {
-    color: #4a4a4a !important;
-    font-weight: 600;
-}
-.nav-link:hover {
-    color: #d63384 !important; /* bright pink on hover */
+    background-color: #004d4d !important; /* teal navbar */
+    border-bottom: 2px solid #26a69a;
 }
 
 /* Headings */
 h1, h2, h3, h4 {
-    color: #d63384; /* vibrant pink for headers */
-    font-weight: 700;
+    color: #4dd0e1; /* bright teal */
+    font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 /* Cards */
 .card {
-    border-radius: 20px;
-    background-color: #fff;
-    border: 2px solid #ffe0eb;
-    box-shadow: 0 4px 12px rgba(255, 175, 197, 0.2);
-    transition: transform 0.2s;
+    background-color: #102a2c !important; 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 150, 136, 0.4);
+    transition: transform 0.2s ease-in-out;
 }
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(255, 175, 197, 0.3);
+    transition: 0.2s ease-in-out;
 }
 
-/* Buttons */
-.btn-primary {
-    background-color: #ff9ebb !important;
-    border-color: #ff9ebb !important;
-    color: #fff !important;
-    font-weight: 600;
-    border-radius: 30px;
+/* Links */
+a, .nav-link {
+    color: #80cbc4 !important;
+    transition: color 0.2s;
+}
+a:hover, .nav-link:hover {
+    color: #4dd0e1 !important;
+}
+
+/* Contact Form Inputs */
+input, textarea {
+    background-color: #1a3c40;
+    border: 1px solid #26a69a;
+    border-radius: 8px;
+    padding: 10px;
+    color: #e0f2f1;
+    width: 100%;
+}
+button {
+    background-color: #26a69a;
+    border: none;
+    border-radius: 8px;
+    color: #0d1b1e;
+    font-weight: bold;
     padding: 10px 20px;
-    box-shadow: 0 4px 10px rgba(255, 158, 187, 0.4);
 }
-.btn-primary:hover {
-    background-color: #ff7aa3 !important;
-    border-color: #ff7aa3 !important;
-}
-
-/* Graph container */
-.js-plotly-plot {
-    background-color: #fff !important;
-    border: 2px solid #ffe0eb;
-    border-radius: 16px;
-    padding: 8px;
-    box-shadow: 0 4px 12px rgba(255, 175, 197, 0.15);
-    max-height: 500px;
+button:hover {
+    background-color: #4dd0e1;
+    cursor: pointer;
 }
 
-/* Contact page styling */
-.contact-section {
-    background: #ffeef5;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(255, 175, 197, 0.2);
-}
+#typed-output {
+    font-size: 1.5rem;
+    border-right: 2px solid #00bfa5;
+    padding-right: 5px;
+    white-space: nowrap;
+  }
